@@ -26,7 +26,7 @@ workspace:
     vaults:
         -
             fsPath: .
-            name: Dendron-Template
+            name: Deep-Learning-Foundations-and-Concepts
             selfContained: true
     journal:
         dailyDomain: daily
