@@ -1,17 +1,13 @@
-# Dendron Template Workspace
+# Deep Learning Foundations and Concepts
 
-A template for starting publishable dendron-code projects.
+This repo is supposed to facilitate learning foundational concepts in deep learning. Of course you should read the book. The best way to learn fundamentals of any kind is spaced repetition and activate recall. The materials provided here try to faciliate learning via these methods.
 
-## Tutorial
+Materials:
 
-Go to [workspace.tutorial](https://mjvolk3.github.io/Dendron-Template/notes/e8kb97d0ku0yblwiraw8wv0/) to find tips on intended usage.
+1. `.mp3` files of each chapter intended to be consumed with an audio book app. Often the activation energy to crack a book open is high, but listening to concepts on a commute is easy. For this reason we provide and `.mp3` per chapter and we use [Swanki](https://pypi.org/project/swanki/) to generate the transcript. It is hard to listen about math so we try to just cover concepts.
 
-## Python
+2. `.apkg` files which can be uploaded to the [Anki](https://apps.ankiweb.net/) app. This app facilitates spaced repetition and can be used on mobile.
 
-- This python app badge checks for passing tests, use of mypy, and use of black formatting.
+3. Repo - This documents how we use [Swanki](https://pypi.org/project/swanki/) to create all the content. All intermediate outputs can be found under `notes.`
 
-![Python application](https://github.com/mjvolk3/Dendron-Template/actions/workflows/python_app.yaml/badge.svg)
-
-- I've left the coverage below 100% to show how this can be useful.
-
-[![codecov](https://codecov.io/gh/mjvolk3/Dendron-Template/branch/main/graph/badge.svg)](https://codecov.io/gh/mjvolk3/Dendron-Template)
+All materials can be found and downloaded from here [Deep Learning Foundations and Concepts](https://drive.google.com/drive/folders/1oYiPqwpMX8lA9za8WGutx5XzIYwt-P5S). If `.mp3` and `.apkg` files do not exist this means I have not yet processed their final versions.
