@@ -1,4 +1,4 @@
-## Define and explain the concept of epistemic uncertainty in the context of machine learning.
+## Define and explain the concept of epistemic uncertainty in the context of machine learning
 
 Epistemic uncertainty, derived from the Greek word "episteme" meaning knowledge, refers to the uncertainty due to the finite size of datasets available for learning. In machine learning applications, such as classifying images of skin lesions, this type of uncertainty can be decreased by accessing more data.
 
@@ -10,7 +10,7 @@ Aleatoric uncertainty, also referred to as intrinsic or stochastic uncertainty, 
 
 - #machine-learning.uncertainty, #statistics.aleatoric-uncertainty
 
-## How can increasing the dataset size influence the predictive accuracy in machine learning models according to the paper?
+## How can increasing the dataset size influence the predictive accuracy in machine learning models?
 
 Increasing the dataset size diminishes the epistemic uncertainty, potentially improving the predictive accuracy of machine learning models. For example, observing more cases of benign and malignant skin lesions can enhance the ability to predict new cases more accurately.
 
@@ -22,13 +22,13 @@ Even with an infinitely large dataset, perfect accuracy might not be achievable 
 
 - #machine-learning.uncertainty, #statistics.aleatoric-uncertainty
 
-## Explain the role of different data types in reducing uncertainty in machine learning applications.
+## Explain the role of different data types in reducing uncertainty in machine learning applications
 
 Gathering various kinds of data can help mitigate aleatoric uncertainty by providing a more comprehensive view of the information, thus possibly enhancing the accuracy and robustness of machine learning predictions.
 
 - #machine-learning.data-collection, #statistics.aleatoric-uncertainty
 
-## Explain how the probability that a continuous variable $x$ lies within an interval $(a, b)$ is calculated.
+## Explain how the probability that a continuous variable $x$ lies within an interval $(a, b)$ is calculated
 
 The probability that $x$ lies within the interval $(a, b)$ is computed as the integral of the probability density $p(x)$ over the interval, represented as:
 
@@ -55,7 +55,7 @@ These conditions ensure that $p(x)$ is a proper representation of probabilities 
 
 - #probability.statistics, #probability-density
 
-## Define the Cumulative Distribution Function (CDF) $P(z)$ for a continuous variable.
+## Define the Cumulative Distribution Function (CDF) $P(z)$ for a continuous variable
 
 The Cumulative Distribution Function (CDF), $P(z)$, for a continuous variable $x$ is defined by the integral of the probability density function $p(x)$ from negative infinity to $z$, as:
 
@@ -67,7 +67,7 @@ The CDF $P(z)$ represents the probability that the variable $x$ assumes a value 
 
 - #probability.statistics, #cumulative-distribution-function
 
-## Discuss the extension of probability concepts from discrete to continuous variables, focusing on the challenges of defining probabilities in continuous settings.
+## Discuss the extension of probability concepts from discrete to continuous variables, focusing on the challenges of defining probabilities in continuous settings
 
 In a continuous setting, unlike discrete settings, the probability of observing any specific exact value is zero because of the infinite possibilities within any range. This necessitates the concept of a probability density, which allows for the determination of probabilities over intervals, instead of discrete points, to effectively manage and quantify uncertainty in continuous variables.
 
@@ -85,7 +85,7 @@ The probability of $x$ lying within the interval $(x, x+\delta x)$ is approximat
 
 - #probability, #continuous-variables.probability-density-function
 
-## Explain the relationship between the probability density function $p(x)$ and the cumulative distribution function $P(x)$.
+## Explain the relationship between the probability density function $p(x)$ and the cumulative distribution function $P(x)$
 
 ![](https://cdn.mathpix.com/cropped/2024_05_10_46157df5e120ef4bbe80g-1.jpg?height=545&width=767&top_left_y=216&top_left_x=891)
 
@@ -117,7 +117,7 @@ The probability of a continuous variable $x$ lying in the interval $(x, x+\delta
 
 %
 
-The image shows the probability density function $p(x)$ as a blue curve and the cumulative distribution function $P(x)$ as a red curve. The $P(x)$ curve is monotonically increasing (due t o non-negativity), representing the accumulation of probabilities from $p(x)$, which effectively makes $P(x)$ the integral of $p(x)$ from $-\infty$ to $x$. The area under the curve of $p(x)$ within an infinitesimally small interval $\delta x$ approximates the increment in $P(x)$ at $x$.
+The image shows the probability density function $p(x)$ as a blue curve and the cumulative distribution function $P(x)$ as a red curve. The $P(x)$ curve is monotonically increasing (due to non-negativity), representing the accumulation of probabilities from $p(x)$, which effectively makes $P(x)$ the integral of $p(x)$ from $-\infty$ to $x$. The area under the curve of $p(x)$ within an infinitesimally small interval $\delta x$ approximates the increment in $P(x)$ at $x$.
 
 - #statistics.visualization, #probability-density-function, #cumulative-distribution-function
 
@@ -145,7 +145,7 @@ This formulation allows us to update the probability of $\mathbf{y}$ given new i
 
 - #probability-theory, #bayes-theorem.continuous-variables
 
-## Discuss the characteristics and normalization condition of the uniform distribution over a finite interval $(c, d)$.
+## Discuss the characteristics and normalization condition of the uniform distribution over a finite interval $(c, d)$
 
 The uniform distribution over the interval $(c, d)$ is defined by the density function $p(x) = \frac{1}{d-c}$ for $x \in (c, d)$ and $p(x) = 0$ otherwise. This density function is normalized such that$$\int_c^d \frac{1}{d-c} \mathrm{d} x = 1,$$ensuring that the total probability over the interval $(c, d)$ is 1.
 
@@ -163,7 +163,7 @@ Measure theory ensures that these operations are well-defined and consistent, pr
 
 - #mathematics, #measure-theory.continuous-probability-rules
 
-## Explain the formula for the exponential distribution and its behavior.
+## Explain the formula for the exponential distribution and its behavior
 
 The exponential distribution is a continuous statistical distribution used to model the time between events in a process where events occur continuously and independently at a constant average rate. The probability density function (PDF) of the exponential distribution is given by:
 
@@ -174,8 +174,6 @@ $$
 where $\lambda > 0$ is the rate parameter, which often reflects the frequency of occurrence of events. The function $\exp(-\lambda x)$ represents the exponential decay in probability as $x$ (often time) increases. This distribution is notably memoryless, meaning the probability of an event occurring in the next time interval is the same regardless of when the last event occurred.
 
 - #statistics, #probability-distributions.exponential-distribution
-
-Certainly! Here are two Anki cards, one focusing on the memoryless property and the other on the derivation from the Poisson process.
 
 ## What is the memoryless property of the exponential distribution and how is it formally expressed?
 
@@ -217,7 +215,7 @@ $$
 
 - #statistics, #probability-distributions.exponential-distribution, #poisson-process
 
-## Define the Laplace distribution and describe its PDF.
+## Define the Laplace distribution and describe its PDF
 
 The Laplace distribution, also known as the double exponential distribution, is a continuous probability distribution that can be used to model differences between two independent exponentially distributed variables. It is expressed by the following probability density function (PDF):
 
@@ -227,22 +225,22 @@ $$
 
 Here:
 
-- $mu$ is the location parameter, which defines the peak (center) of the distribution.
+- $\mu$ is the location parameter, which defines the peak (center) of the distribution.
 - $\gamma$ is the scale parameter, which describes the spread or dispersion from the peak.
 
-### Key Characteristics:
+### Key Characteristics
 
 - **Symmetry**: The Laplace distribution is symmetric around its mean $\mu$. This means that the distribution looks the same on both sides of the peak.
 - **Sharper Peak**: Compared to the normal distribution, the Laplace distribution has a sharper peak at the mean and heavier tails. This makes it useful for modeling data with more frequent extreme deviations from the mean.
 
-### Applications:
+### Applications
 
 - Modeling differences between two independent exponential distributions.
 - Suitable for datasets with outliers or heavier tails than those modeled by the normal distribution.
 
 - #statistics, #probability-distributions.laplace-distribution
 
-## Discuss the Dirac delta function and its application in probability theory.
+## Discuss the Dirac delta function and its application in probability theory
 
 The Dirac delta function, denoted as $\delta(x-\mu)$, is not a function in the conventional sense but rather a distribution. It is defined to be zero everywhere except at $x = \mu$ where it is theoretically infinite:
 
@@ -254,7 +252,7 @@ The key property of the Dirac delta function is that it integrates to 1 over the
 
 - #mathematics, #probability-distributions.dirac-delta-function
 
-## Define the empirical distribution function using the Dirac delta function for a finite sample set.
+## Define the empirical distribution function using the Dirac delta function for a finite sample set
 
 Given a finite set of observations $\mathcal{D}=\{x_1, \ldots, x_N\}$, the empirical distribution function can be constructed using the Dirac delta function as follows:
 
@@ -266,7 +264,7 @@ This formula represents a probability density that places a mass of $1/N$ at eac
 
 - #statistics, #distribution-functions.empirical-distribution
 
-## Explain the concept of expectation for a function under a probability distribution and its calculation in the discrete case.
+## Explain the concept of expectation for a function under a probability distribution and its calculation in the discrete case
 
 The expectation of a function $f(x)$ under a probability distribution $p(x)$ is a fundamental concept in statistics, representing the average or expected value of $f(x)$ when the randomness of $x$ is taken into account. This is mathematically denoted and calculated in the discrete case as:
 
@@ -278,7 +276,7 @@ This formula sums the products of $p(x)$, the probability of $x$, and $f(x)$, th
 
 - #mathematics, #statistics, #probability-theory.expectation
 
-## Describe the probability distribution represented by the red plot in the image.
+## Describe the probability distribution represented by the red plot in the image
 
 ![](https://cdn.mathpix.com/cropped/2024_05_10_1078b436a401e29e2f93g-1.jpg?height=500&width=703&top_left_y=219&top_left_x=955)
 
@@ -381,32 +379,38 @@ This variance measures how much $f(x)$ varies around its mean $\mathbb{E}[f(x)]$
 To derive the variance formula $\operatorname{var}[f] = \mathbb{E}[f(x)^2] - \mathbb{E}[f(x)]^2$ from the definition, follow these steps:
 
 1. **Definition of Variance**:
+
   $$
    \operatorname{var}[f] = \mathbb{E}[(f(x) - \mathbb{E}[f(x)])^2]
   $$
 
 2. **Expand the Squared Term**:
+
   $$
    (f(x) - \mathbb{E}[f(x)])^2 = f(x)^2 - 2f(x)\mathbb{E}[f(x)] + (\mathbb{E}[f(x)])^2
   $$
 
 3. **Take the Expectation**:
+
   $$
    \mathbb{E}[(f(x) - \mathbb{E}[f(x)])^2] = \mathbb{E}[f(x)^2 - 2f(x)\mathbb{E}[f(x)] + (\mathbb{E}[f(x)])^2]
   $$
 
 4. **Use Linearity of Expectation**:
+
   $$
    \mathbb{E}[f(x)^2 - 2f(x)\mathbb{E}[f(x)] + (\mathbb{E}[f(x)])^2] = \mathbb{E}[f(x)^2] - 2\mathbb{E}[f(x)]\mathbb{E}[f(x)] + \mathbb{E}[(\mathbb{E}[f(x)])^2]
   $$
 
 5. **Simplify**:
+
   $$
    \mathbb{E}[(\mathbb{E}[f(x)])^2] = (\mathbb{E}[f(x)])^2
   $$
    because $\mathbb{E}[f(x)]$ is a constant.
 
 6. **Combine Terms**:
+
   $$
    \operatorname{var}[f] = \mathbb{E}[f(x)^2] - 2\mathbb{E}[f(x)]\mathbb{E}[f(x)] + (\mathbb{E}[f(x)])^2]
   $$
@@ -433,9 +437,9 @@ Covariance measures the extent to which $x$ and $y$ vary together. A positive co
 
 - #covariance, #joint-expectation, #correlation-analysis
 
-## How is the covariance between two random variables \( x \) and \( y \) defined and derived?
+## How is the covariance between two random variables $x$ and $y$ defined and derived?
 
-Covariance between two random variables \( x \) and \( y \), denoted as \( \operatorname{cov}[x, y] \), is defined and calculated by:
+Covariance between two random variables $x$ and $y$, denoted as $\operatorname{cov}[x, y]$, is defined and calculated by:
 
 $$
 \begin{aligned}
@@ -446,22 +450,25 @@ $$
 
 Derivation:
 
-1. **Expand** \( (x - \mathbb{E}[x])(y - \mathbb{E}[y]) \):
+1. **Expand** $(x - \mathbb{E}[x])(y - \mathbb{E}[y])$:
+
   $$
    (x - \mathbb{E}[x])(y - \mathbb{E}[y]) = xy - x\mathbb{E}[y] - \mathbb{E}[x]y + \mathbb{E}[x]\mathbb{E}[y]
   $$
 
 2. **Take the expectation**:
+
   $$
    \mathbb{E}[(x - \mathbb{E}[x])(y - \mathbb{E}[y])] = \mathbb{E}[xy] - \mathbb{E}[x]\mathbb{E}[y] - \mathbb{E}[x]\mathbb{E}[y] + \mathbb{E}[x]\mathbb{E}[y]
   $$
 
 3. **Simplify**:
+
   $$
    \operatorname{cov}[x, y] = \mathbb{E}[xy] - \mathbb{E}[x]\mathbb{E}[y]
   $$
 
-Covariance measures the extent to which \( x \) and \( y \) vary together. A positive covariance indicates that \( x \) and \( y \) tend to increase or decrease together, whereas a negative covariance indicates that one increases when the other decreases.
+Covariance measures the extent to which $x$ and $y$ vary together. A positive covariance indicates that $x$ and $y$ tend to increase or decrease together, whereas a negative covariance indicates that one increases when the other decreases.
 
 - #covariance, #joint-expectation, #correlation-analysis
 
@@ -511,6 +518,10 @@ This measure reflects how concentrated the distribution is around the mean. A hi
 ![](https://cdn.mathpix.com/cropped/2024_05_10_0b3cce270cab6a31625fg-1.jpg?height=555&width=770&top_left_y=216&top_left_x=890)
 
 %
+
+$$
+\mathcal{N}\left(x \mid \mu, \sigma^{2}\right) = \frac{1}{\left(2 \pi \sigma^{2}\right)^{1 / 2}} \exp \left\{-\frac{1}{2 \sigma^{2}}(x-\mu)^{2}\right\}
+$$
 
 The equation represented by the plot is $\mathcal{N}(x|\mu,\sigma^2)$ which indicates the Gaussian (normal) distribution with mean $\mu$ and variance $\sigma^2$. In the graph, $\mu$ is shown as the peak of the bell-shaped curve and $\sigma$ is represented graphically by the horizontal arrow on either side of $\mu$, each part of the arrow extending $\sigma$ units. This two-headed arrow of total length $2\sigma$ represents two standard deviations from the mean, covering roughly 95% of the data distribution if the data follows this Gaussian distribution.
 
@@ -568,7 +579,7 @@ Here, $\operatorname{var}[x]$ defines the spread of the distribution around the 
 
 - #statistics, #math.probability.variance, #gaussian-distribution
 
-## Define the likelihood function in the context of Gaussian density estimation from a dataset.
+## Define the likelihood function in the context of Gaussian density estimation from a dataset
 
 The likelihood function for Gaussian density estimation, given a set of i.i.d. observations $\mathbf{x} = \{x_1, \ldots, x_N\}$, is expressed as:
 
@@ -576,7 +587,7 @@ $$
 p(\mathbf{x} \mid \mu, \sigma^2) = \prod_{n=1}^{N} \mathcal{N}(x_n \mid \mu, \sigma^2)
 $$
 
-where 
+where
 
 $$
 \mathcal{N}(x_n \mid \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp \left( -\frac{(x_n - \mu)^2}{2\sigma^2} \right)
@@ -634,7 +645,7 @@ Maximizing the likelihood function, which involves maximizing the probability of
 
 - #statistics.likelihood-function, #statistical-estimation, #probability-theory.bayes-theorem
 
-## Detail why maximizing the log of a function is equivalent to maximizing the function itself.
+## Detail why maximizing the log of a function is equivalent to maximizing the function itself
 
 Maximizing the log of a function is equivalent to maximizing the function itself because the logarithm is a monotonically increasing function. This means that if the function value increases, its logarithm also increases, and vice versa. This property ensures that the maximum value of the original function and its logarithm occur at the same point.
 
@@ -750,7 +761,7 @@ demonstrating that it accurately represents the true variance without underestim
 
 ## How does the number of data points $N$ influence the bias in maximum likelihood estimation for variance in the Gaussian case?
 
-In the scenario of Gaussian distributions, the bias in variance estimation via maximum likelihood becomes negligible as the number of data points $N$ increases. In the limit as 
+In the scenario of Gaussian distributions, the bias in variance estimation via maximum likelihood becomes negligible as the number of data points $N$ increases. In the limit as
 
 $$N \rightarrow \infty$$
 
@@ -758,7 +769,7 @@ the maximum likelihood estimate of variance equals the true variance of the unde
 
 - #statistics.maximum-likelihood-estimation, #statistics.sample-size, #gaussian-distribution
 
-## Describe the probabilistic perspective of linear regression and its formulation using Gaussian distributions.
+## Describe the probabilistic perspective of linear regression and its formulation using Gaussian distributions
 
 In the probabilistic view of linear regression, the uncertainty about the target variable $t$, given an input $x$, is modeled with a Gaussian distribution. The mean of this distribution is given by the polynomial regression model$$y(x, \mathbf{w})$$, where $\mathbf{w}$ represents the polynomial coefficients. The variance is represented by$$\sigma^2$$. Mathematically, this is expressed as
 $$
@@ -774,7 +785,7 @@ In complex models possessing many parameters, such as neural networks, the issue
 
 - #statistics.maximum-likelihood-estimation, #machine-learning.model-complexity, #machine-learning.overfitting
 
-## Explain the relationship between maximum likelihood estimation and error minimization in linear regression.
+## Explain the relationship between maximum likelihood estimation and error minimization in linear regression
 
 From a probabilistic perspective, the linear regression problem can be seen as an application of maximum likelihood estimation where the target variable $t$, given an input $x$, follows a Gaussian distribution with a mean given by the regression function and a specified variance. The MLE approach essentially minimizes the error between the predicted values and the actual values in the training data, where the 'error' is quantified as the negative log-likelihood of the Gaussian model. This understanding bridges the classical approach of error minimization in regression with probabilistic modeling, highlighting an underlying unity in statistical estimation techniques.
 
@@ -834,7 +845,7 @@ This transformation simplifies products into sums, which are easier to handle an
 
 - #statistics, #machine-learning.log-likelihood
 
-## Describe how $\mathbf{w}_{\mathrm{ML}}$, the maximum likelihood estimates of weights, is determined from the log likelihood.
+## Describe how $\mathbf{w}_{\mathrm{ML}}$, the maximum likelihood estimates of weights, is determined from the log likelihood
 
 $\mathbf{w}_{\mathrm{ML}}$ is determined by maximizing the log likelihood function with respect to $\mathbf{w}$. By dropping terms that do not depend on $\mathbf{w}$ and minimizing the negative of the remaining expression, $\mathbf{w}_{\mathrm{ML}}$ is effectively obtained by minimizing:
 
@@ -846,7 +857,7 @@ This comes from the part of the log likelihood function that depends on $\mathbf
 
 - #machine-learning, #optimization.ML-estimation
 
-## Explain the role of Gaussian noise assumption in the derivation of the sum-of-squares error function.
+## Explain the role of Gaussian noise assumption in the derivation of the sum-of-squares error function
 
 The assumption of Gaussian noise in the likelihood function leads directly to the derivation of the sum-of-squares error function. By simplifying the log likelihood function to exclude constant terms with respect to $\mathbf{w}$ and considering only the Gaussian component, the sum-of-squares emerges naturally as the function to minimize, aligning with methods used in regression analysis.
 
@@ -880,7 +891,7 @@ The image primarily demonstrates the concept of conditional probability distribu
 
 - #statistics, #regression-analysis.conditional-probability
 
-## Derive the log likelihood function for the model provided from the Gaussian distribution formula.
+## Derive the log likelihood function for the model provided from the Gaussian distribution formula
 
 ![](https://cdn.mathpix.com/cropped/2024_05_10_0e32f455ec8070cf8fccg-1.jpg?height=681&width=694&top_left_y=221&top_left_x=955)
 
@@ -914,7 +925,6 @@ which is the log likelihood function for the given data and model parameters.
 
 - #statistics, #regression-analysis.log-likelihood-function
 
-
 ## In the context of probability in machine learning, what fundamental rules are mentioned as governing probabilities, and how do they assist in decision-making?
 
 Probabilities are governed by the sum rule and the product rule. These rules, in combination with decision theory, enable optimal predictions given all available information, even if the information is incomplete or ambiguous.
@@ -927,7 +937,7 @@ Combining multiple types of data significantly reduces the intrinsic and systema
 
 - #uncertainty-reduction, #data-fusion, #medical-imaging
 
-## Describe the experiment with the bent coin and its implications for understanding probabilities as discussed in the paper.
+## Describe the experiment with the bent coin and its implications for understanding probabilities as discussed in the paper
 
 The bent coin experiment shows that if flipped enough times, the coin lands concave side up 60% of the time and convex side up 40% of the time. This frequency-based approach to understanding probabilities exemplifies the frequentist view of statistics, where the probability is defined as the limit of the relative frequency of an event as the number of trials approaches infinity. From a Bayesian perspective, this experiment can also be interpreted by updating the belief about the probability of the coin landing concave or convex side up based on observed data, using prior knowledge and observed frequencies to form a posterior distribution.
 
@@ -943,7 +953,7 @@ The function plotted is $y(x_1, x_2) = \sin(2\pi x_1) \sin(2\pi x_2)$. Data is g
 
 - #mathematics, #function-plotting.two-dimensional
 
-## Give a plausible explanation for why the noise is different in the two projections shown in the images.
+## Give a plausible explanation for why the noise is different in the two projections shown in the images
 
 ![](https://cdn.mathpix.com/cropped/2024_05_10_9d5d7b4dd8479033db17g-1.jpg?height=520&width=694&top_left_y=219&top_left_x=151)
 
@@ -953,12 +963,12 @@ The function plotted is $y(x_1, x_2) = \sin(2\pi x_1) \sin(2\pi x_2)$. Data is g
 
 %
 
-Figure 2.1 illustrates the function \( y(x_1, x_2) = \sin(2\pi x_1) \sin(2\pi x_2) \). Data is generated by selecting values for \( x_1 \) and \( x_2 \), computing \( y(x_1, x_2) \), and then adding Gaussian noise.
+Figure 2.1 illustrates the function $y(x_1, x_2) = \sin(2\pi x_1) \sin(2\pi x_2)$. Data is generated by selecting values for $x_1$ and $x_2$, computing $y(x_1, x_2)$, and then adding Gaussian noise.
 
 The noise is different in the two projections due to:
 
-- In the second image (b), \( x_2 \) is unobserved, resulting in higher noise levels and greater dispersion in \( y \). The regression model cannot account for the variability introduced by \( x_2 \), leading to a noisier distribution.
-- In the third image (c), \( x_2 \) is fixed to a specific value, which reduces the noise levels and results in a clearer pattern. The variability from \( x_2 \) is controlled, allowing the model to better capture the relationship between \( x_1 \) and \( y \).
+- In the second image (b), $x_2$ is unobserved, resulting in higher noise levels and greater dispersion in $y$. The regression model cannot account for the variability introduced by $x_2$, leading to a noisier distribution.
+- In the third image (c), $x_2$ is fixed to a specific value, which reduces the noise levels and results in a clearer pattern. The variability from $x_2$ is controlled, allowing the model to better capture the relationship between $x_1$ and $y$.
 
 - #data-generation, #machine-learning, #regression, #noise-modeling, #data-visualization, #statistics
 
@@ -1074,6 +1084,30 @@ where $\mathbf{J}$ is the Jacobian matrix of partial derivatives of $\mathbf{g}^
   
 - #probability.distributions, #statistics.nonlinear-transformation, #mathematical-concepts.density-transformation
 
+## What are the two ways to transform $p_X(x)$ when $y = g(x)$, and which one is correct?
+
+Transform the probability density under the change of variables $y = g(x)$.
+
+![](https://cdn.mathpix.com/cropped/2024_05_10_99e0ce50ade2d8f270a1g-1.jpg?height=498&width=721&top_left_y=220&top_left_x=939)
+
+%
+
+### Path 1: Naive Plugin (Green Curve)
+
+- Simply substitute $x = g^{-1}(y)$ into $p_X(x)$ without accounting for the change in measure:
+$$p_{\text{green}}(y) = p_X(g^{-1}(y))$$
+- This is **incorrect** as it doesn't preserve total probability.
+
+### Path 2: Correct Transformation (Magenta Curve)
+
+- Apply the change-of-variables formula with the Jacobian determinant:
+$$p_Y(y) = p_X(g^{-1}(y)) \left|\frac{d}{dy}g^{-1}(y)\right|$$
+- This is the **correct** transformation that preserves the total probability.
+
+The Jacobian factor accounts for how the transformation "stretches" or "compresses" the probability density across the new variable space.
+
+- #probability.density-transformation, #mathematics.change-of-variables, #probability.jacobian-determinant
+
 ## What equation describes the transformed density under a variable change, including its Jacobian matrix representation?
 
 The transformed density $p_{\mathbf{y}}(\mathbf{y})$ when changing variables from $\mathbf{x}$ to $\mathbf{y}$, where $\mathbf{y} = \mathbf{g}(\mathbf{x})$, is given by:
@@ -1096,9 +1130,9 @@ This represents how local volume elements transform under the mapping $\mathbf{g
 
 - #probability.distributions, #mathematics.jacobian, #mathematical-concepts.variable-change
 
-## Distinguish between the "direct" transformation of a probability density and its proper transformation under a change of variables.
+## Distinguish between the "direct" transformation of a probability density and its proper transformation under a change of variables
 
-Direct transformation of a density \( p_x(x) \) by simply substituting the transformation function, yielding \( p_x(g(y)) \), does not account for how differential volume elements are distorted by the variable change. This method often results in an incorrect density on the transformed space and fails to preserve the total probability. The correct transformation, however, involves the Jacobian determinant approach:
+Direct transformation of a density $p_x(x)$ by simply substituting the transformation function, yielding $p_x(g(y))$, does not account for how differential volume elements are distorted by the variable change. This method often results in an incorrect density on the transformed space and fails to preserve the total probability. The correct transformation, however, involves the Jacobian determinant approach:
 
 $$
 p_y(y) = p_x(g(y)) \left|\operatorname{det} \mathbf{J}_{g}(y) \right|
@@ -1160,8 +1194,7 @@ The modulus in the change of variables formula in probability theory is used to 
 
 - #probability-theory, #change-of-variables, #mathematical-concepts
 
-
-## Describe the effect of the transformation shown in Figure 2.13 on a Gaussian distribution using the specified change of variables.
+## Describe the effect of the transformation shown in Figure 2.13 on a Gaussian distribution using the specified change of variables
 
 ![](https://cdn.mathpix.com/cropped/2024_05_10_effe402d88fd8f278266g-1.jpg?height=894&width=1394&top_left_y=227&top_left_x=209)
 
@@ -1178,7 +1211,7 @@ These changes lead to distortions in the shape and spread of the Gaussian distri
 
 - #statistical-distributions, #gaussian-distribution, #transformation-effects
 
-## Explain the principle of equal probability mass in the context of changing variables in probability distributions.
+## Explain the principle of equal probability mass in the context of changing variables in probability distributions
 
 The principle of equal probability mass implies that when transforming variables within a probability distribution, the total probability mass in any region of the original variable space ($\Delta x$) is preserved in the transformed variable space ($\Delta \mathbf{y}$). This principle is foundational for the correct application of change of variables in probability distributions, ensuring that the total probability across the distribution remains consistent.
 
@@ -1233,7 +1266,7 @@ Entropy, $H[x]$, represents the average amount of information transmitted when a
 
 ## Explain the relationship of the negative sign in the formula $h(x) = -\log_2 p(x)$
 
-The negative sign in the formula$$h(x) = -\log_2 p(x)$$is crucial as it ensures that the information content is always non-negative. This sign inversion is necessary because $\log_2 p(x)$ yields negative values for probabilities less than 1, which are typical in realistic scenarios. The negative sign thus transforms these values into positive measures of information content.
+The negative sign in the formula$$h(x) = -\log_2 p(x)$$is crucial as it ensures that the information content is always non-negative. This sign inversion is necessary because $\log_2 p(x)$ yields negative values for probabilities less than 1. The negative sign thus transforms these values into positive measures of information content.
 
 - #information-theory.information-content, #mathematics.logarithms
 
@@ -1243,7 +1276,7 @@ Bits, short for 'binary digits', are used as units in information theory when lo
 
 - #information-theory.bits, #technology.data-communication
 
-## Clarify the implication of $\lim_{\epsilon \to 0}(\epsilon \ln \epsilon) = 0$ for entropies involving probabilities of zero.
+## Clarify the implication of $\lim_{\epsilon \to 0}(\epsilon \ln \epsilon) = 0$ for entropies involving probabilities of zero
 
 In entropy calculations such as$$H[x] = -\sum_x p(x) \log_2 p(x)$$there arises a need to handle terms where $p(x) = 0$. The limit$$\lim_{\epsilon \to 0}(\epsilon \ln \epsilon) = 0$$is applied to justify that the contribution to entropy from such terms is zero. This avoids undefined or infinite values in the entropy expression, ensuring that the entropy is computable even when probabilities of some events are zero.
 
@@ -1259,7 +1292,7 @@ Entropy quantifies the average information content needed to describe the state 
 
 Here is the uniform example. For a random variable $x$ with equally likely states, entropy calculates this as$$\mathrm{H}[x]=-8 \times \frac{1}{8} \log _{2} \frac{1}{8}=3 \text{ bits.}$$
 
-In contrast to uniform distributions, non-uniform distributions generally have lower entropy. When probabilities are unequal, higher probabilities contribute less to entropy due to the negative logarithm. Using the provided probability distribution 
+In contrast to uniform distributions, non-uniform distributions generally have lower entropy. When probabilities are unequal, higher probabilities contribute less to entropy due to the negative logarithm. Using the provided probability distribution
 
 $$\left(\frac{1}{2}, \frac{1}{4}, \frac{1}{8}, \frac{1}{16}, \frac{1}{64}, \frac{1}{64}, \frac{1}{64}, \frac{1}{64}\right),$$
 
@@ -1273,7 +1306,7 @@ This lower entropy reflects the reduced uncertainty and information requirement 
 
 - #information-theory.entropy, #probability.distributions, #computer-science.data-encoding
 
-## Discuss the relationship between entropy and coding length in the context of the noiseless coding theorem.
+## Discuss the relationship between entropy and coding length in the context of the noiseless coding theorem
 
 The noiseless coding theorem, a fundamental principle in information theory devised by Shannon in 1948, asserts that the minimum average length of a code needed to transmit the state of a random variable without noise cannot be less than the entropy of the variable. For example, even when using an optimal coding scheme for non-uniform distributions, the average code length equals the entropy as shown:
 
@@ -1297,7 +1330,7 @@ Entropy is alternatively calculated using natural logarithms to ease mathematica
 
 - #information-theory.entropy-conversion, #mathematics.natural-logarithm, #physics.statistical-mechanics
 
-## Explore the historical context and dual interpretation of entropy in physics and information theory.
+## Explore the historical context and dual interpretation of entropy in physics and information theory
 
 Historically, entropy was introduced in the realm of thermodynamics to describe heat dispersion and energy distribution within a system. It was later extended within statistical mechanics as a metric of disorder. This dual aspect of entropy, both as a physical property and as a measure of information amount, illustrates its interdisciplinary importance—highlighting entropy's role in understanding both concrete physical processes and abstract information distribution.
 
@@ -1315,7 +1348,7 @@ where $N!$ represents the factorial of $N$, the total number of ways to order $N
 
 - #combinatorics.factorial, #probability.multiplicity
 
-## Define the entropy $H$ of allocating $N$ objects into bins and show its expression.
+## Define the entropy $H$ of allocating $N$ objects into bins and show its expression
 
 Entropy $H$ for the distribution of $N$ objects into bins is given by:
 
@@ -1327,7 +1360,7 @@ Here, $\ln W$ represents the natural logarithm of the multiplicity, and the divi
 
 - #probability.entropy, #mathematics-logarithm
 
-## Apply Stirling's approximation to find an expression for $H$ as $N \to \infty$.
+## Apply Stirling's approximation to find an expression for $H$ as $N \to \infty$
 
 Stirling’s approximation states that $\ln N! \approx N \ln N - N$. Using this, the entropy $H$ can be approximated as
 
@@ -1339,7 +1372,7 @@ where $p_i = \lim_{N \to \infty} \left(\frac{n_i}{N}\right)$. This expression us
 
 - #math.stirling-approximation, #probability.entropy-limit
 
-## Discuss how entropy varies with the distribution of probability $p(x_i)$ for a random variable $X$.
+## Discuss how entropy varies with the distribution of probability $p(x_i)$ for a random variable $X$
 
 Entropy $H[p]$ of a discrete random variable $X$ is defined as
 
@@ -1363,7 +1396,7 @@ This function includes a Lagrange multiplier $\lambda$ to enforce the probabilit
 
 - #optimization.lagrange-multiplier, #probability.probability-constraint-maximization
 
-## Define the entropy $\mathrm{H}$ for a discrete distribution of probabilities.
+## Define the entropy $\mathrm{H}$ for a discrete distribution of probabilities
 
 The entropy, $\mathrm{H}$, for a discrete distribution where the probabilities of distinct states $x_i$ are given by $p(x_i)$ is defined as:
 $$
@@ -1373,7 +1406,7 @@ This formula quantifies the amount of uncertainty or randomness in the distribut
 
 - #information-theory.entropy, #probability.discrete-distributions
 
-## Explain why a uniform distribution maximizes entropy using the concept of entropy $\mathrm{H}$.
+## Explain why a uniform distribution maximizes entropy using the concept of entropy $\mathrm{H}$
 
 A uniform distribution maximizes entropy because in such a distribution, every outcome $x_i$ has equal probability, $p(x_i) = \frac{1}{M}$ for $M$ total outcomes. The entropy for a uniform distribution is then given by:
 $$
@@ -1383,7 +1416,7 @@ Since entropy measures uncertainty and a uniform distribution provides no prefer
 
 - #information-theory.entropy-maximization, #probability.uniform-distribution
 
-## Derive the expression for the second derivative of entropy $\mathrm{H}$ with respect to $p(x_i)$ and discuss its implications.
+## Derive the expression for the second derivative of entropy $\mathrm{H}$ with respect to $p(x_i)$ and discuss its implications
 
 To verify that the entropy function attains a maximum, we consider its second derivative:
 $$
@@ -1393,7 +1426,7 @@ where $I_{ij}$ is the Kronecker delta (which is 1 if $i=j$ and 0 otherwise). Thi
 
 - #calculus.derivatives, #information-theory.entropy-analysis
 
-## Explain how the concept of differential entropy extends to continuous distributions.
+## Explain how the concept of differential entropy extends to continuous distributions
 
 Differential entropy extends the concept of entropy to continuous distributions by considering a variable $x$ divided into bins of width $\Delta$. Assuming $p(x)$ is continuous and using the mean value theorem:
 $$
@@ -1403,7 +1436,7 @@ represents the probability of $x$ falling within the $i$-th bin, approximated by
 
 - #information-theory.differential-entropy, #calculus.integration
 
-## Utilize the identity matrix in the context of the second derivative of entropy.
+## Utilize the identity matrix in the context of the second derivative of entropy
 
 In the expression for the second derivative of entropy for a discrete distribution, the identity matrix $I_{ij}$ plays a crucial role by ensuring that the mixture of partial derivatives only contributes along the diagonal where $i=j$:
 $$
@@ -1423,7 +1456,7 @@ The left histogram, with values more concentrated around a smaller number of bin
 
 - #entropy, #probability-distributions, #information-theory
 
-## Calculate and explain the entropy value for a uniform distribution over 30 bins as mentioned in the associated text.
+## Calculate and explain the entropy value for a uniform distribution over 30 bins as mentioned in the associated text
 
 ![](https://cdn.mathpix.com/cropped/2024_05_10_86a2845941e286ae4e26g-1.jpg?height=648&width=1510&top_left_y=272&top_left_x=134)
 
@@ -1514,14 +1547,19 @@ This equation generalizes the concept of entropy to multidimensional continuous 
 To maximize the differential entropy for a continuous variable $p(x)$, it is necessary to satisfy three conditions:
 
 1. Normalization:
+
   $$
    \int_{-\infty}^{\infty} p(x) \mathrm{d} x = 1
   $$
+
 2. Expected value:
+
   $$
    \int_{-\infty}^{\infty} x p(x) \mathrm{d} x = \mu
   $$
+
 3. Variance:
+
   $$
    \int_{-\infty}^{\infty} (x - \mu)^2 p(x) \mathrm{d} x = \sigma^2
   $$
@@ -1530,7 +1568,7 @@ These constraints ensure the distribution $p(x)$ is well-defined with specified 
 
 - #optimization, #constraints.normalization-variance-moment
 
-## Describe the application of Lagrange multipliers in maximizing the functional for entropy under constraints.
+## Describe the application of Lagrange multipliers in maximizing the functional for entropy under constraints
 
 The application of Lagrange multipliers in maximizing the entropy functional of a continuous variable $p(x)$ under constraints involves defining a Lagrangian:
 
@@ -1712,7 +1750,7 @@ A function is termed strictly convex if the inequality$$f(\lambda a + (1-\lambda
 
 - #calculus.convexity, #mathematics.strict-convexity
 
-## Explain Jensen's inequality as it applies to a convex function $f(x)$.
+## Explain Jensen's inequality as it applies to a convex function $f(x)$
 
 Jensen's inequality states that for a convex function $f(x)$, if $\{\lambda_i\}$ are non-negative real numbers that sum to 1, and $\{x_i\}$ are any points, then$$f\left(\sum_{i=1}^M \lambda_i x_i\right) \leq \sum_{i=1}^M \lambda_i f(x_i)$$holds. This inequality suggests that the value of the function at a weighted average is less than or equal to the weighted average of the function values at those points.
 
@@ -1724,7 +1762,7 @@ Jensen's inequality extended to expectations states that for a convex function $
 
 - #statistics.expectations, #inequalities.jensens-inequality
 
-## Apply Jensen's inequality to derive the non-negativity of Kullback-Leibler divergence.
+## Apply Jensen's inequality to derive the non-negativity of Kullback-Leibler divergence
 
 Given the convex function $-\ln x$ and using Jensen's inequality in the form$$f\left(\int \mathbf{x} p(\mathbf{x}) \mathrm{d} \mathbf{x}\right) \leq \int f(\mathbf{x}) p(\mathbf{x}) \mathrm{d} \mathbf{x}$$applied to Kullback-Leibler divergence leads to$$\mathrm{KL}(p \| q) = -\int p(\mathbf{x}) \ln \left\{\frac{q(\mathbf{x})}{p(\mathbf{x})}\right\} \mathrm{d} \mathbf{x} \geq -\ln \int q(\mathbf{x}) \mathrm{d} \mathbf{x} = 0.$$This shows that the KL divergence is always non-negative due to the convexity of the negative logarithm function.
 
@@ -1785,7 +1823,7 @@ These functions meet the convexity condition as their second derivatives, $1/x$ 
 
 - #mathematics, #convexity.convex-functions.extra-examples
 
-## Explain why $-\ln x$ is considered a strictly convex function.
+## Explain why $-\ln x$ is considered a strictly convex function
 
 $-\ln x$ is considered strictly convex because its second derivative, $\frac{d^2}{dx^2}(-\ln x) = \frac{1}{x^2}$, is positive for all $x > 0$. In convex analysis, a function is termed strictly convex if its second derivative is positive over the interval of interest, which implies that the curve lies above any secant line joining two points on the graph, and equality only holds at those two points.
 
@@ -1797,7 +1835,7 @@ The normalization condition $\int q(\mathbf{x}) \mathrm{d} \mathbf{x} = 1$ ensur
 
 - #mathematics.probability.distributions, #statistics.normalization
 
-## Derive the expression for Kullback-Leibler divergence approximation using a finite sample set.
+## Derive the expression for Kullback-Leibler divergence approximation using a finite sample set
 
 Given a target distribution $p(\mathbf{x})$ and an approximating distribution $q(\mathbf{x} \mid \boldsymbol{\theta})$, the Kullback-Leibler divergence can be approximated as:
 
@@ -1815,7 +1853,7 @@ This relationship indicates that the total entropy $\mathrm{H}[\mathbf{x}, \math
 
 - #information-theory.entropy, #mathematics.probability.entropy
 
-## Analyze the equation $\mathrm{H}[\mathbf{y} \mid \mathbf{x}]=-\iint p(\mathbf{y}, \mathbf{x}) \ln p(\mathbf{y} \mid \mathbf{x}) \mathrm{d} \mathbf{y} \mathrm{d} \mathbf{x}$ in terms of its components and implications.
+## Analyze the equation $\mathrm{H}[\mathbf{y} \mid \mathbf{x}]=-\iint p(\mathbf{y}, \mathbf{x}) \ln p(\mathbf{y} \mid \mathbf{x}) \mathrm{d} \mathbf{y} \mathrm{d} \mathbf{x}$ in terms of its components and implications
 
 The equation defines the conditional entropy of $\mathbf{y}$ given $\mathbf{x}$. Conditional entropy quantifies the expected amount of information required to describe $\mathbf{y}$ once $\mathbf{x}$ is known. Each component $p(\mathbf{y}, \mathbf{x})$ signifies the joint probability, and $\ln p(\mathbf{y} \mid \mathbf{x})$ is the natural logarithm of the conditional probability of $\mathbf{y}$ given $\mathbf{x}$. The integral calculates the expected value of this logarithmic measure across the joint distribution, essentially measuring the average surprise or uncertainty in $\mathbf{y}$ after $\mathbf{x}$ is observed.
 
@@ -1893,7 +1931,7 @@ Bayesian inference incorporates prior beliefs about model parameters and updates
 
 - #statistics.estimation-methods, #probability.bayesian-vs-mle
 
-## Describe the impact of different choices of training datasets on Bayesian and maximum likelihood estimations of model parameters $\mathbf{w}$.
+## Describe the impact of different choices of training datasets on Bayesian and maximum likelihood estimations of model parameters $\mathbf{w}$
 
 The choice and volume of the training dataset $\mathcal{D}$ significantly influence the estimations of model parameters $\mathbf{w}$. Under the Maximum Likelihood Estimation method, different datasets can lead to different estimates $\mathbf{w}_{\mathrm{ML}}$. From the Bayesian perspective, varying data inputs alter the likelihood function $p(\mathcal{D} \mid \mathbf{w})$, prompting adjustments in the posterior distribution $p(\mathbf{w} \mid \mathcal{D})$. Hence, Bayesian analysis provides a framework to account for uncertainty and variability in $\mathbf{w}$ based on the data seen, which is critical in real-world applications where data could be imprecise or limited.
 
@@ -1967,7 +2005,7 @@ This principled approach to regularization vis-a-vis Bayesian techniques illustr
   
 - #machine-learning.bayesian, #regularization, #model-complexity
 
-## Describe the process of making predictions in Bayesian machine learning.
+## Describe the process of making predictions in Bayesian machine learning
 
 In Bayesian machine learning, predictions for a target variable $t$ given a new input $x$ and the dataset $\mathcal{D}$ are based on the posterior predictive distribution:
 $$p(t \mid x, \mathcal{D})=\int p(t \mid x, \mathbf{w}) p(\mathbf{w} \mid \mathcal{D}) \mathrm{d} \mathbf{w}.$$This distribution integrates over all possible parameter values $\mathbf{w}$, using the posterior distribution $p(\mathbf{w} \mid \mathcal{D})$ as weights.
@@ -1994,7 +2032,7 @@ This computational bottleneck significantly constrains the scalability of Bayesi
 
 - #machine-learning.bayesian, #computational-complexity, #deep-learning
 
-## Given a prior probability of cancer $p(C=1)=0.001$, calculate the posterior probability of having cancer given a positive test result, $p(C=1 \mid T=1)$.
+## Given a prior probability of cancer $p(C=1)=0.001$, calculate the posterior probability of having cancer given a positive test result, $p(C=1 \mid T=1)$
 
 The Bayes' theorem provides a way to calculate the posterior probability as follows:
 $$
@@ -2004,13 +2042,13 @@ You need to substitute values for $p(T=1 \mid C=1)$ (the probability of a positi
 
 - #statistics.probability-theory, #medical-screening.bayesian-updating
 
-## Describe the concept of non-transitivity in random variables and how it applies to Efron's dice.
+## Describe the concept of non-transitivity in random variables and how it applies to Efron's dice
 
 Non-transitivity in random variables means that if we have $x, y, z$ such that $x>y$ and $y>z$, it doesn't necessarily follow that $x>z$. For Efron's dice, each pair of dice can be ordered such that one more frequently shows a higher face value than the other. Surprisingly, for Efron's dice, the order can create a cyclical dominance where each die has a $2/3$ probability of rolling a higher number than the previous die in the cycle.
 
 - #mathematics.statistics, #mathematics.probability.non-transitivity, #games-and-puzzles.dice-games
 
-## Derive the formula for the convolution of two independent random variable distributions, $p_{\mathbf{y}}(\mathbf{y})$.
+## Derive the formula for the convolution of two independent random variable distributions, $p_{\mathbf{y}}(\mathbf{y})$
 
 Given two independent random variables $\mathbf{u} \sim p_{\mathbf{u}}(\mathbf{u})$ and $\mathbf{v} \sim p_{\mathbf{v}}(\mathbf{v})$, the distribution for their sum $\mathbf{y} = \mathbf{u} + \mathbf{v}$ is given by:
 $$
@@ -2020,7 +2058,7 @@ This operation is a convolution, reflecting how the probability density of $\mat
 
 - #mathematics.probability-theory, #mathematics.convolution, #statistics.random-variables
 
-## Verify the normalization of the uniform distribution as defined in the text and calculate its mean and variance.
+## Verify the normalization of the uniform distribution as defined in the text and calculate its mean and variance
 
 Assuming the uniform distribution over interval $[a, b]$, normalization requires:
 $$
@@ -2034,7 +2072,7 @@ These results demonstrate basic properties of the uniform distribution and ensur
 
 - #mathematics.probability-theory, #statistics.distribution-properties, #mathematics.uniform-distribution
 
-## Verify the normalization of the exponential and Laplace distributions mentioned in the paper.
+## Verify the normalization of the exponential and Laplace distributions mentioned in the paper
 
 For the exponential distribution defined by parameter $λ$:
 $$
@@ -2058,7 +2096,7 @@ These are non-transitive dice, specifically Efron dice, which exhibit the proper
 
 - #probability.theory, #game-theory, #non-transitive-dice
 
-## Explain the probability dynamics within this cycle of Efron dice.
+## Explain the probability dynamics within this cycle of Efron dice
 
 ![](https://cdn.mathpix.com/cropped/2024_05_10_94469b00ff35a4fb5aa3g-1.jpg?height=503&width=457&top_left_y=1080&top_left_x=1071)
 
@@ -2113,7 +2151,7 @@ Random variables, such as $X$ and $Y$, differ from constants in that their value
 
 - #statistics.random-variables, #stochastic-processes
 
-## Explain the significance of the limit $N \rightarrow \infty$ when computing probabilities.
+## Explain the significance of the limit $N \rightarrow \infty$ when computing probabilities
 
 The limit $N \rightarrow \infty$ in probability computations implies considering an infinite number of trials, which helps in stabilizing the probability values by reducing the variance inherent in smaller samples. In practical terms, as $N$ grows larger, the estimated probabilities based on finite samples converge to their true theoretical probabilities.
 
@@ -2199,7 +2237,7 @@ This is achieved by recognizing that the marginal probability $p(X=x_i)$ can be 
 
 - #probability, #statistics.sum-rule, #math-formulas
 
-## Derive the formula for the conditional probability $p(Y=y_j | X=x_i)$.
+## Derive the formula for the conditional probability $p(Y=y_j | X=x_i)$
 
 The conditional probability $p(Y=y_j | X=x_i)$ is derived as follows:
 
@@ -2227,7 +2265,7 @@ This result follows from the fact that the sum of counts in all columns equals $
 
 - #probability, #statistics.total-probability-theorem, #math-formulas
 
-## Explain the normalization condition for conditional probabilities $p(Y=y_j | X=x_i)$.
+## Explain the normalization condition for conditional probabilities $p(Y=y_j | X=x_i)$
 
 This normalization condition states that the sum of conditional probabilities over all possible outcomes of $Y$, given a specific $X=x_i$, must equal one:
 
@@ -2271,7 +2309,7 @@ where $n_{ij}$ is the number of instances where $X=x_i$ and $Y=y_j$ and $c_i$ is
 
 - #probability, #statistics.conditional-probability, #statistics.sum-rule
 
-## Define the marginal probability of a random variable $X$ in the context of a two-dimensional probability distribution table.
+## Define the marginal probability of a random variable $X$ in the context of a two-dimensional probability distribution table
 
 ![](https://cdn.mathpix.com/cropped/2024_05_10_0ac15dbddb7cf99e2d43g-1.jpg?height=361&width=539&top_left_y=215&top_left_x=1113)
 
@@ -2287,7 +2325,7 @@ where $M$ is the number of possible values $Y$ can take. This operation is refer
 
 - #probability, #statistics.marginal-probability
 
-## Explain the significance of the sum rule of probability depicted in the tableau for a random variable $X$.
+## Explain the significance of the sum rule of probability depicted in the tableau for a random variable $X$
 
 ![](https://cdn.mathpix.com/cropped/2024_05_10_0ac15dbddb7cf99e2d43g-1.jpg?height=361&width=539&top_left_y=215&top_left_x=1113)
 
@@ -2297,7 +2335,7 @@ The sum rule of probability illustrated in the tableau is essential as it assert
 
 - #probability, #statistics.sum-rule
 
-## Derive the relationship between joint probability and conditional and marginal probabilities as shown in the given expressions.
+## Derive the relationship between joint probability and conditional and marginal probabilities as shown in the given expressions
 
 From the provided equations, the relationship between joint probability $p(X,Y)$ and conditional and marginal probabilities is given by:
 $$
@@ -2307,7 +2345,7 @@ where $p\left(X=x_i, Y=y_j\right)$ is the joint probability of $X=x_i$ and $Y=y_
 
 - #probability.joint-probability, #probability.conditional-probability, #probability.marginal-probability
 
-## Explain the sum rule in probability theory.
+## Explain the sum rule in probability theory
 
 The sum rule in probability theory is expressed as:
 $$
@@ -2341,7 +2379,7 @@ This accounts for all the ways $X$ can occur summed over all values of $Y$ in th
 
 - #probability.bayes-theorem, #probability.normalization, #statistics
 
-## Discuss the impact of changing notation in probability from explicit to compact on the clarity and efficiency of expression.
+## Discuss the impact of changing notation in probability from explicit to compact on the clarity and efficiency of expression
 
 Changing the notation in probability from explicitly denoting random variables and their values (e.g., $p(X=x_i)$) to a more compact form (e.g., $p(x_i)$) can enhance the efficiency of mathematical expressions by reducing verbosity. However, it necessitates a clear context to avoid ambiguity. This notation shift is reflected in both simplified calculations and theoretical discussions, where clarity is not compromised by the reduced form.
 
@@ -2353,7 +2391,7 @@ $N=60$ represents the total number of data points sampled from the joint distrib
 
 - #statistics.probability-distributions, #mathematics.data-sampling
 
-## Define and differentiate between marginal and conditional distributions as illustrated in Figure 2.5.
+## Define and differentiate between marginal and conditional distributions as illustrated in Figure 2.5
 
 Marginal distribution looks at the probabilities of single variables irrespective of the others, as seen in $p(X)$ and $p(Y)$. The conditional distribution, such as $p(X \mid Y=1)$, shows the probabilities of variable $X$ given that $Y=1$.
 
@@ -2365,7 +2403,7 @@ Histograms model probability distributions by showing the frequency of data poin
 
 - #statistics.histograms, #mathematics.data-visualization
 
-## Explain the implication of the statement that "the fractions would equal the corresponding probabilities $p(Y)$ in the limit when $N \rightarrow \infty$" as discussed in the exposition about histograms in Figure 2.5.
+## Explain the implication of the statement that "the fractions would equal the corresponding probabilities $p(Y)$ in the limit when $N \rightarrow \infty$" as discussed in the exposition about histograms in Figure 2.5
 
 This statement underscores the concept of convergence in probability theory where, as the sample size $N$ increases to infinity, the fractions of occurrences of outcomes (measured by histograms) converge to their true probabilities in the underlying distribution.
 
@@ -2429,7 +2467,7 @@ These probabilities reflect the assumed prevalence of cancer in the population, 
 
 - #probability, #statistics, #medical-screening
 
-## Define the conditional probabilities associated with test results given the cancer status, $T=1$ and $T=0$, based on the medical screening example.
+## Define the conditional probabilities associated with test results given the cancer status, $T=1$ and $T=0$, based on the medical screening example
 
 The conditional probabilities for positive ($T=1$) and negative ($T=0$) test results, given the cancer status, are defined as:
 
@@ -2459,7 +2497,7 @@ This calculation illustrates how the sum and product rules of probability are ap
 
 - #probability, #probability-rules, #medical-screening
 
-## Calculate and explain the probability of a negative test result, $p(T=0)$, in the medical screening context.
+## Calculate and explain the probability of a negative test result, $p(T=0)$, in the medical screening context
 
 The probability of a negative test result, $p(T=0)$, can be computed using the sum rule of probability, which states that the sum of probabilities of all complementary events must equal one:
 
@@ -2529,7 +2567,7 @@ So, there is approximately a 77% chance that the person does not have cancer des
 
 - #statistics.bayesian, #probability.conditionals, #medical-screening
 
-## Define and differentiate between prior and posterior probabilities in the context of Bayesian statistics.
+## Define and differentiate between prior and posterior probabilities in the context of Bayesian statistics
 
 In Bayesian statistics:
 
@@ -2561,7 +2599,7 @@ It illustrates how Bayesian reasoning can yield very different probabilities fro
 
 - #statistics.bayesian, #probability.prior-posterior, #healthcare-decision-making
 
-## Explain the concept of independence in probability and cite an example using cancer screening.
+## Explain the concept of independence in probability and cite an example using cancer screening
 
 Two events or variables are considered independent in probability if the occurrence of one does not affect the occurrence of the other. This is mathematically expressed as the factorization of their joint distribution:
 
